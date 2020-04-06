@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.cryptape.cita_wallet.view.TitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:isShowBottomLine="true"
+        app:isShowLeft="true" />
+
+    <TextView
+        android:id="@+id/tv_token_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@color/warning_background"
+        android:drawableStart="@drawable/warning"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/default_margin"
+        android:paddingEnd="@dimen/default_margin"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/token_warning_message"
+        android:textColor="@color/warning_font"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <com.cryptape.cita_wallet.view.TokenProfileView
+        android:id="@+id/view_token_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_token_warning"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/transfer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <View
+            android:id="@+id/view_nothing"
+            android:layout_width="2dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:background="@color/line_form" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/receive_token"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/view_nothing"
+            android:background="@null"
+            android:text="@string/receive_token"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/transfer_token"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/view_nothing"
+            android:background="@null"
+            android:text="@string/transfer_button"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/transfer_layout"
+        android:layout_below="@id/view_token_profile">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/transaction_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/default_margin"
+            android:paddingEnd="@dimen/default_margin" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

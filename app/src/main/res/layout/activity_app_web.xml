@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/title_left_close"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:padding="11dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/title_close" />
+
+            <ImageView
+                android:id="@+id/title_bar_right"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:padding="11dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/title_more"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/title_bar_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/title_bar_right"
+                android:layout_toEndOf="@id/title_left_close"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/font_title"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/separateLineLong"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cryptape.cita_wallet.view.webview.CytonWebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.cryptape.cita_wallet.view.WebErrorView
+                android:id="@+id/view_web_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/menu_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000"
+        android:visibility="gone" />
+</FrameLayout>

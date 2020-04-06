@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.cryptape.cita_wallet.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:isShowBottomLine="true"
+        app:isShowLeft="true"
+        app:title="@string/wallet_exchange" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wallet_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+</LinearLayout>

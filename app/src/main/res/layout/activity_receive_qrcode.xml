@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_background"
+        android:orientation="vertical">
+
+        <com.cryptape.cita_wallet.view.TitleBar
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            app:isShowBottomLine="false"
+            app:isShowLeft="true"
+            app:isShowRight="true"
+            app:right_img="@drawable/ic_share"
+            app:title="@string/title_receive_qrcode"
+            app:title_bg="@color/white"
+            app:title_color="@color/font_title" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/rl_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/default_margin"
+            android:background="@drawable/qrcode_receive_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/ic_launcher3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/font_title"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/qrcode_address_corner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_qrcode">
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/tv_copy"
+                    android:textColor="@color/font_title_third"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:text="@string/copy"
+                    android:textColor="@color/font_link"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="@dimen/default_margin"
+                android:layout_marginBottom="23dp"
+                android:text="@string/qrcode_receive_tips"
+                android:textColor="@color/font_title_third"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rl_address" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+</ScrollView>

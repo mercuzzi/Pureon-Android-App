@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_background"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:background="@color/warning_background"
+            android:drawableStart="@drawable/warning"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/default_margin"
+            android:paddingEnd="@dimen/default_margin"
+            android:text="@string/import_mnemonic_warning"
+            android:textColor="@color/warning_font"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="@dimen/default_margin"
+            android:paddingTop="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin"
+            android:paddingBottom="6dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_mnemonic"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/edit_input_shape"
+                android:gravity="start"
+                android:hint="@string/import_mnemonic_input_hint"
+                android:padding="10dp"
+                android:textColor="@color/font_title"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <View
+                style="@style/inputSeparateLine"
+                android:layout_marginStart="@dimen/default_margin" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="start|center_vertical"
+            android:hint="@string/input_wallet_name_hint"
+            android:maxLength="15"
+            android:paddingStart="@dimen/default_margin"
+            android:paddingEnd="@dimen/default_margin"
+            android:singleLine="true"
+            android:textColor="@color/font_title"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <View
+                style="@style/inputSeparateLine"
+                android:layout_marginStart="@dimen/default_margin" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="start|center_vertical"
+            android:hint="@string/input_password_hint"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/default_margin"
+            android:paddingEnd="@dimen/default_margin"
+            android:singleLine="true"
+            android:textColor="@color/font_title"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <View
+                style="@style/inputSeparateLine"
+                android:layout_marginStart="@dimen/default_margin" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="start|center_vertical"
+            android:hint="@string/input_new_password_again_hint"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/default_margin"
+            android:paddingEnd="@dimen/default_margin"
+            android:singleLine="true"
+            android:textColor="@color/font_title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:text="@string/password_suggestion"
+            android:textColor="@color/font_title_third"
+            android:textSize="12sp" />
+
+        <com.cryptape.cita_wallet.view.button.CommonButton
+            android:id="@+id/cb_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            app:status="false"
+            app:text="@string/import_wallet" />
+    </LinearLayout>
+
+</ScrollView>

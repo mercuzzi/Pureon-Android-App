@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.cryptape.cita_wallet.view.TitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:isShowLeft="true"
+        app:title="@string/confirm_mnemonic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warning_background"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/warning"
+        android:padding="10dp"
+        android:text="@string/confirm_mnemonic_warning"
+        android:textColor="@color/warning_font"
+        android:textSize="12sp" />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/mnemonic_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@drawable/add_wallet_log_corner_shape"
+        android:padding="5dp"
+        zhy:max_select="-1" />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/mnemonic_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        zhy:max_select="-1" />
+
+    <com.cryptape.cita_wallet.view.button.CommonButton
+        android:id="@+id/backup_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:status="true"
+        app:text="@string/backup_complete" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mnemonic_format">
+        <item>Jaxx,Metamask(ETH),imToken</item>
+        <item>Ledger(ETH) </item>
+        <item>自定义路径</item>
+    </string-array>
+
+
+    <string-array name="mnemonic_path">
+        <item>m/44\'/60\'/0\'/0/0</item>
+        <item>m/44\'/60\'/0\'/0</item>
+        <item>m/44\'/60\'/1\'/0/0</item>
+    </string-array>
+
+</resources>

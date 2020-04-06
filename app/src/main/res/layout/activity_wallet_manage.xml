@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+
+    <com.cryptape.cita_wallet.view.TitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:isShowLeft="true"
+        app:title="@string/wallet_manage_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:paddingStart="@dimen/default_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/wallet_photo"
+            android:textColor="@color/font_title"
+            android:textSize="15sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/wallet_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:src="@drawable/wallet_photo"
+            app:civ_border_color="@color/line_input"
+            app:civ_border_width="1dp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/separateLineLong"
+        android:layout_marginStart="@dimen/default_margin" />
+
+    <RelativeLayout
+        android:id="@+id/wallet_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingStart="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="@string/wallet_name"
+            android:textColor="@color/font_title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/wallet_name_text"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/right_arrow"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical|end"
+            android:singleLine="true"
+            android:text="@string/wallet_name"
+            android:textColor="@color/font_title_second"
+            android:textSize="13sp" />
+
+        <View
+            style="@style/separateLineLong"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/default_margin" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingStart="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin">
+
+        <TextView
+            android:id="@+id/wallet_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="@string/wallet_address"
+            android:textColor="@color/font_title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/wallet_address"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="end"
+            android:singleLine="true"
+            android:textColor="@color/font_title_second"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <com.cryptape.cita_wallet.view.SettingButtonView
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:name="@string/change_password" />
+
+    <com.cryptape.cita_wallet.view.SettingButtonView
+        android:id="@+id/export_keystore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bottom_line="false"
+        app:name="@string/export_keystore" />
+
+    <View style="@style/separateLineLong" />
+
+    <TextView
+        android:id="@+id/delete_wallet_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:gravity="center"
+        android:text="@string/delete_wallet"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+</LinearLayout>

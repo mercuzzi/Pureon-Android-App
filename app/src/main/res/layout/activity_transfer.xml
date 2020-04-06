@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.cryptape.cita_wallet.view.TitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:isShowLeft="true"
+        app:title="@string/title_transfer" />
+
+    <com.cryptape.cita_wallet.view.button.CommonButton
+        android:id="@+id/next_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:status="true"
+        app:text="@string/next_action" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/next_action_button"
+        android:layout_below="@id/title"
+        android:background="@color/default_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_margin="@dimen/default_margin"
+                android:background="@drawable/dialog_background">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/wallet_photo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/default_margin"
+                    app:civ_border_color="@color/line_input"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/wallet_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/wallet_photo"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    android:layout_toEndOf="@id/wallet_photo"
+                    android:textColor="@color/font_title"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/wallet_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/wallet_photo"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    android:layout_toEndOf="@id/wallet_photo"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@color/font_title_second"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:paddingStart="@dimen/default_margin"
+                android:paddingEnd="@dimen/default_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/token_transfer_value"
+                    android:textColor="@color/font_title"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/wallet_balance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/transfer_value"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:gravity="start|center_vertical"
+                android:hint="@string/token_transfer_value"
+                android:inputType="numberDecimal"
+                android:paddingStart="@dimen/default_margin"
+                android:paddingEnd="@dimen/default_margin"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/default_margin"
+                android:paddingEnd="@dimen/default_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/receive_address"
+                    android:textColor="@color/font_title"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/transfer_address_scan"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/scan" />
+
+            </RelativeLayout>
+
+            <com.cryptape.cita_wallet.view.CompressEditText
+                android:id="@+id/cet_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:paddingStart="@dimen/default_margin"
+                android:paddingEnd="@dimen/default_margin"
+                app:edit_hint="@string/input_receive_address_hint"
+                app:text_color="@color/font_title"
+                app:text_size="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@color/white"
+                android:paddingStart="@dimen/default_margin"
+                android:paddingEnd="@dimen/default_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/fee_value"
+                    android:textColor="@color/font_title"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fee_value_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_title"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
