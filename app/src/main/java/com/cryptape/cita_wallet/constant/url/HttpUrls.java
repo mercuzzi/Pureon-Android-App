@@ -19,8 +19,8 @@ public class HttpUrls {
     public static final String DISCOVER_URL = "https://dap.ps";
 
     //Token Currency ID Price
-    public static final String TOKEN_ID = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
-    public static final String TOKEN_CURRENCY = "https://api.coinmarketcap.com/v2/ticker/@ID/?convert=@Currency";
+    public static final String TOKEN_ID = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=ea96952c-770d-4351-ba68-5da1b5425c60";
+    public static final String TOKEN_CURRENCY = "https://pro-api.coinmarketcap.com/v1/tools/price-conversion?CMC_PRO_API_KEY=ea96952c-770d-4351-ba68-5da1b5425c60&id=@ID&amount=1&convert=@Currency";
     public static final String COLLECTION_LIST_URL = "https://api.opensea.io/api/v1/assets/?owner=";
 
     // Image url

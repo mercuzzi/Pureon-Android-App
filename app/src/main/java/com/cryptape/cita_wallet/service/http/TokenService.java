@@ -68,7 +68,7 @@ public class TokenService {
     private static String fetchPriceFromResponse(String response, String currency) throws JSONException {
         JSONObject object = new JSONObject(response);
         JSONObject data = object.optJSONObject("data");
-        JSONObject quotes = data.optJSONObject("quotes");
+        JSONObject quotes = data.optJSONObject("quote");
         JSONObject quote = quotes.optJSONObject(currency);
         if (quote != null) {
             return quote.optString("price");
