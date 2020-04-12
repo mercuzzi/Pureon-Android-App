@@ -1,11 +1,13 @@
 ![](https://img.shields.io/badge/made%20for-CITA-blue.svg)
 
-# Cyton Wallet (Android)
+# Pureon Android Wallet (Android)
 
 Overview
 ===============
 
-Cyton is an open source blockchain wallet which supports [Ethereum](https://www.ethereum.org/) and [CITA](https://github.com/cryptape/cita). It supports most tokens of Ethereum and CITA, such as ETH, ERC20, ERC721, and also supports most kinds of DApps of Ethereum and CITA , such as cryptokitties, Fomo3D, 0xproject...
+Pureon is an Ethereum-based Wallet that supports ERC-20 coins.
+
+It supports most tokens of Ethereum and CITA, such as ETH, ERC20, ERC721, and also supports most kinds of DApps of Ethereum, such as Cryptokitties, Fomo3D, 0xproject...
 
 Getting Started
 ===============
@@ -48,4 +50,4 @@ expected to follow our code of conduct.
 
 MIT License
 ============================================
-Cyton is an open source project under MIT License.
+Pureon is an open source project under MIT License.
