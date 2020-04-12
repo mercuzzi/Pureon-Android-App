@@ -29,21 +29,12 @@
                 android:background="@color/white"
                 android:orientation="vertical">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="312dp"
+                    android:layout_height="234dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="26dp"
-                    android:src="@drawable/ic_about_us_logo" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dip"
-                    android:text="@string/app_name"
-                    android:textColor="@color/font_title"
-                    android:textSize="16sp" />
+                    app:srcCompat="@drawable/ic_splash_cyton_logo" />
 
                 <TextView
                     android:id="@+id/app_version"
@@ -74,14 +65,6 @@
                 app:name="@string/about_us_server_private" />
 
             <com.cryptape.cita_wallet.view.SettingButtonView
-                android:id="@+id/sbv_nervos_network"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dip"
-                app:icon="@drawable/ic_about_us_nervos_network"
-                app:name="Nervos Network" />
-
-            <com.cryptape.cita_wallet.view.SettingButtonView
                 android:id="@+id/sbv_infura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -96,23 +79,6 @@
                 app:icon="@drawable/ic_about_us_open_sea"
                 app:name="Open Sea"
                 app:right_txt="@string/openSea_describe" />
-
-            <com.cryptape.cita_wallet.view.SettingButtonView
-                android:id="@+id/sbv_peck_shield"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:icon="@drawable/ic_about_peck_shield"
-                app:name="PeckShield"
-                app:right_txt="@string/peckShield_describe" />
-
-            <com.cryptape.cita_wallet.view.SettingButtonView
-                android:id="@+id/sbv_cita"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/default_margin"
-                app:icon="@drawable/ic_about_cita"
-                app:name="CITA"
-                app:right_txt="@string/cita_describe" />
 
         </LinearLayout>
     </ScrollView>
