@@ -7,7 +7,7 @@ public class HttpEtherUrls {
 
     // Ether node host
     public static final String ETH_NODE_MAIN_URL = "https://mainnet.infura.io/v3/9094bf7e58664495bcf6d7cf075c0937";
-    public static final String ETH_NODE_URL_RINKEBY = "https://rinkeby.infura.io/llyrtzQ3YhkdESt2Fzrk";
+    public static final String ETH_NODE_URL_RINKEBY = "https://rinkeby.infura.io/v3/9094bf7e58664495bcf6d7cf075c0937";
     public static final String ETH_NODE_URL_KOVAN = "https://kovan.infura.io/llyrtzQ3YhkdESt2Fzrk";
     public static final String ETH_NODE_URL_ROPSTEN = "https://ropsten.infura.io/v3/9094bf7e58664495bcf6d7cf075c0937";
 

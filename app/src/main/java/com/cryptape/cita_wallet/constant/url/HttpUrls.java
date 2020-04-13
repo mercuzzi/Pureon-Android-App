@@ -16,12 +16,12 @@ public class HttpUrls {
     public static final String CITA_GITHUB_URL = "https://github.com/cryptape/cita";
 
     // Discover page config information
-    public static final String DISCOVER_URL = "https://dap.ps";
+    public static final String DISCOVER_URL = "https://dap.ps/";
 
     //Token Currency ID Price
     public static final String TOKEN_ID = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=ea96952c-770d-4351-ba68-5da1b5425c60";
     public static final String TOKEN_CURRENCY = "https://pro-api.coinmarketcap.com/v1/tools/price-conversion?CMC_PRO_API_KEY=ea96952c-770d-4351-ba68-5da1b5425c60&id=@ID&amount=1&convert=@Currency";
-    public static final String COLLECTION_LIST_URL = "https://api.opensea.io/api/v1/assets/?owner=";
+    public static final String COLLECTION_LIST_URL = "https://etherscan.io/tokenholdings?a=%s";
 
     // Image url
     public static final String DEFAULT_WEB_IMAGE_URL = "https://cdn.cryptape.com/neuron/default_web_icon.png";
@@ -29,8 +29,8 @@ public class HttpUrls {
     //Token Describe
     public static final String TOKEN_LOGO = "https://github.com/consenlabs/token-profile/blob/master/images/%s.png?raw=true";
     public static final String TOKEN_DESC = "https://raw.githubusercontent.com/consenlabs/token-profile/master/erc20/%s.json";
-    public static final String TOKEN_ERC20_DETAIL = "https://ntp.staging.cryptape.com?token=%s";
-    public static final String TOKEN_DETAIL = "https://ntp.cryptape.com?coin=%s";
+    public static final String TOKEN_ERC20_DETAIL = "https://etherscan.io/token/%s";
+    public static final String TOKEN_DETAIL = "https://godex.io/?aff_id=akdwuUL7XzMd1ecP&utm_source=affiliate&utm_medium=Pureon&utm_campaign=akdwuUL7XzMd1ecP";
 
     //Eth Transaction Detail
     public static final String ETH_MAINNET_TRANSACTION_DETAIL = "https://etherscan.io/tx/%s";

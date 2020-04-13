@@ -52,8 +52,8 @@ class TokenProfileView(context: Context, attrs: AttributeSet) : ConstraintLayout
                 getDescribe(mToken!!.contractAddress) { item ->
                     visibility = View.VISIBLE
                     tv_token_symbol.text = item.symbol
-                    tv_token_des_first.text = item.overView.zh
-                    setDesSecondLine(item.overView.zh)
+                    tv_token_des_first.text = item.overView.en
+                    setDesSecondLine(item.overView.en)
                     TokenLogoUtil.setLogo(mToken!!, context, iv_token_logo)
                     getPrice(context, mToken!!) { tv_price.text = it }
                     setOnClickListener { SimpleWebActivity.gotoSimpleWeb(context, String.format(HttpUrls.TOKEN_ERC20_DETAIL, mToken!!.contractAddress)) }
