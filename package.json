@@ -1,0 +1,16 @@
+{
+  "name": "pureon",
+  "version": "1.0.0",
+  "description": "erc20 contracts",
+  "main": "index.js",
+  "dependencies": {
+    "ganache": "^6.4.4",
+    "ganache-cli": "^6.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "andrew mercnik",
+  "license": "MIT"
+}
