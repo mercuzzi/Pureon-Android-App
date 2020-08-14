@@ -5,7 +5,7 @@
 Overview
 ===============
 
-Pureon is an Ethereum-based Wallet that supports ERC-20 coins.
+Pureon is fork of an Ethereum-based Wallet that supports ERC-20 coins.
 
 It supports most tokens of Ethereum and CITA, such as ETH, ERC20, ERC721, and also supports most kinds of DApps of Ethereum, such as Cryptokitties, Fomo3D, 0xproject...
 
