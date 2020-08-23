@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/made%20for-CITA-blue.svg)
-
 # Pureon Android Wallet (Android)
 
 Overview
@@ -21,7 +19,7 @@ Getting Started
 
 ### Install from apk file
 
-You can download apk file from [release](https://github.com/cryptape/cyton-android/releases) and install directly on Android smart phone.
+You can download apk file shortly once it is available.
 
 Making a new build for App store (Dev only)
 ============================================
