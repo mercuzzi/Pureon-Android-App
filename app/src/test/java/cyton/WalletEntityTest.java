@@ -3,8 +3,8 @@ package cyton;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import com.cryptape.cita_wallet.util.crypto.MnemonicUtils;
-import com.cryptape.cita_wallet.util.crypto.WalletEntity;
+import com.pureon.pur_wallet.util.crypto.MnemonicUtils;
+import com.pureon.pur_wallet.util.crypto.WalletEntity;
 import org.web3j.utils.Numeric;
 
 /**

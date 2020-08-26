@@ -1,8 +1,8 @@
 package cyton;
 
 import org.junit.Test;
-import com.cryptape.cita_wallet.util.CurrencyUtil;
-import com.cryptape.cita_wallet.util.NumberUtil;
+import com.pureon.pur_wallet.util.CurrencyUtil;
+import com.pureon.pur_wallet.util.NumberUtil;
 import org.web3j.utils.Numeric;
 
 import java.math.BigInteger;

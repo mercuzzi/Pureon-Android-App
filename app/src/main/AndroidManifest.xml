@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.cryptape.cita_wallet">
+    package="com.pureon.pur_wallet">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <application
-        android:name=".CytonApplication"
+        android:name="com.pureon.pur_wallet.CytonApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -36,7 +36,7 @@
             android:value="${InstallChannelValue}" />
 
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.pureon.pur_wallet.activity.SplashActivity"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.SPLASH">
@@ -47,146 +47,146 @@
         </activity>
 
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.pureon.pur_wallet.activity.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.addtoken.AddTokenActivity"
+            android:name="com.pureon.pur_wallet.activity.addtoken.AddTokenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.transactionlist.view.TransactionListActivity"
+            android:name="com.pureon.pur_wallet.activity.transactionlist.view.TransactionListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity android:name=".activity.TransactionDetailActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".activity.transfer.TransferActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".activity.AdvanceSetupActivity"
+        <activity android:name="com.pureon.pur_wallet.activity.TransactionDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.WalletManageActivity"
+            android:name="com.pureon.pur_wallet.activity.transfer.TransferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.pureon.pur_wallet.activity.AdvanceSetupActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.AddWalletActivity"
+            android:name="com.pureon.pur_wallet.activity.WalletManageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.CreateWalletActivity"
+            android:name="com.pureon.pur_wallet.activity.AddWalletActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.BackupMnemonicActivity"
+            android:name="com.pureon.pur_wallet.activity.CreateWalletActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.ConfirmMnemonicActivity"
+            android:name="com.pureon.pur_wallet.activity.BackupMnemonicActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.ImportWalletActivity"
+            android:name="com.pureon.pur_wallet.activity.ConfirmMnemonicActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.AppWebActivity"
+            android:name="com.pureon.pur_wallet.activity.ImportWalletActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.TokenManageActivity"
+            android:name="com.pureon.pur_wallet.activity.AppWebActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.ReceiveQrCodeActivity"
+            android:name="com.pureon.pur_wallet.activity.TokenManageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.ChangePasswordActivity"
+            android:name="com.pureon.pur_wallet.activity.ReceiveQrCodeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.AddWebsiteActivity"
+            android:name="com.pureon.pur_wallet.activity.ChangePasswordActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.PayTokenActivity"
+            android:name="com.pureon.pur_wallet.activity.AddWebsiteActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.QrCodeActivity"
+            android:name="com.pureon.pur_wallet.activity.PayTokenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.pureon.pur_wallet.activity.QrCodeActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
         <activity
-            android:name=".activity.ExportKeystoreActivity"
+            android:name="com.pureon.pur_wallet.activity.ExportKeystoreActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.SimpleWebActivity"
+            android:name="com.pureon.pur_wallet.activity.SimpleWebActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.AboutUsActivity"
+            android:name="com.pureon.pur_wallet.activity.AboutUsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.CurrencyActivity"
+            android:name="com.pureon.pur_wallet.activity.CurrencyActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.changewallet.ChangeWalletActivity"
+            android:name="com.pureon.pur_wallet.activity.changewallet.ChangeWalletActivity"
             android:theme="@style/transparent_activity" />
         <activity
-            android:name=".activity.PwdUnlockActivity"
+            android:name="com.pureon.pur_wallet.activity.PwdUnlockActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.FingerPrintActivity"
+            android:name="com.pureon.pur_wallet.activity.FingerPrintActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.CollectionDetailActivity"
+            android:name="com.pureon.pur_wallet.activity.CollectionDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.ImportFingerTipActivity"
+            android:name="com.pureon.pur_wallet.activity.ImportFingerTipActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.collectwebsite.CollectWebsiteActivity"
+            android:name="com.pureon.pur_wallet.activity.collectwebsite.CollectWebsiteActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.collection.CollectActivity"
+            android:name="com.pureon.pur_wallet.activity.collection.CollectActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -200,11 +200,11 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <service android:name=".service.intent.CITATransactionCheckService"
+        <service android:name="com.pureon.pur_wallet.service.intent.CITATransactionCheckService"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:exported="true"/>
 
-        <service android:name=".service.intent.EtherTransactionCheckService"
+        <service android:name="com.pureon.pur_wallet.service.intent.EtherTransactionCheckService"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:exported="true"/>
 

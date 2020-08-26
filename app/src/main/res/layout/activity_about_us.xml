@@ -6,7 +6,7 @@
     android:background="@color/default_background"
     android:orientation="vertical">
 
-    <com.cryptape.cita_wallet.view.TitleBar
+    <com.pureon.pur_wallet.view.TitleBar
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -48,7 +48,7 @@
 
             </LinearLayout>
 
-            <com.cryptape.cita_wallet.view.SettingButtonView
+            <com.pureon.pur_wallet.view.SettingButtonView
                 android:id="@+id/sbv_source_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
                 app:icon="@drawable/ic_about_us_origin_code"
                 app:name="@string/about_us_source_code" />
 
-            <com.cryptape.cita_wallet.view.SettingButtonView
+            <com.pureon.pur_wallet.view.SettingButtonView
                 android:id="@+id/sbv_server_private"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 app:icon="@drawable/ic_about_us_server_pri"
                 app:name="@string/about_us_server_private" />
 
-            <com.cryptape.cita_wallet.view.SettingButtonView
+            <com.pureon.pur_wallet.view.SettingButtonView
                 android:id="@+id/sbv_infura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                 app:name="Infura"
                 app:right_txt="@string/infua_describe" />
 
-            <com.cryptape.cita_wallet.view.SettingButtonView
+            <com.pureon.pur_wallet.view.SettingButtonView
                 android:id="@+id/sbv_open_sea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
