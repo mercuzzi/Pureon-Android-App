@@ -239,6 +239,7 @@ public class DBWalletUtil extends DBUtil {
                 wallet.tokens.add(token);
             }
             saveWallet(context, wallet);
+
         }
     }
 

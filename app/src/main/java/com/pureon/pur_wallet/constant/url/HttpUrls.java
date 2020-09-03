@@ -30,7 +30,7 @@ public class HttpUrls {
     public static final String TOKEN_LOGO = "https://github.com/consenlabs/token-profile/blob/master/images/%s.png?raw=true";
     public static final String TOKEN_DESC = "https://raw.githubusercontent.com/consenlabs/token-profile/master/erc20/%s.json";
     public static final String TOKEN_ERC20_DETAIL = "https://etherscan.io/token/%s";
-    public static final String TOKEN_DETAIL = "https://godex.io/?aff_id=akdwuUL7XzMd1ecP&utm_source=affiliate&utm_medium=Pureon&utm_campaign=akdwuUL7XzMd1ecP";
+    public static final String TOKEN_DETAIL = "https://changelly.com/buy?from=cad&to=eth&amount=100&ref_id=0e2c4d4ba345";
 
     //Eth Transaction Detail
     public static final String ETH_MAINNET_TRANSACTION_DETAIL = "https://etherscan.io/tx/%s";
