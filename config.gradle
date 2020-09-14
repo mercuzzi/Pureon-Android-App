@@ -1,8 +1,8 @@
 ext.appConfig = [
-        versionCode: 17,
+        versionCode: 19,
 
         versionMajor: 0,
-        versionMinor: 4,
+        versionMinor: 5,
         versionBeta: 0,
 
         signStorePassword: "cryptape2016@#",
@@ -10,7 +10,7 @@ ext.appConfig = [
         signKeyPassword  : "cryptape2016@#",
 
         minSdkVersion    : 21,
-        targetSdkVersion : 27,
+        targetSdkVersion : 29,
         compileSdkVersion: 27,
         devVersionName   : "1.0",
         devResConfigsEn  : "en",

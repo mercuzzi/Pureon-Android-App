@@ -78,8 +78,6 @@ public class DBChainUtil extends DBUtil {
 
     public static void initChainData(Context context) {
         saveChain(context, new Chain(ConstantUtil.ETHEREUM_MAIN_ID, ConstantUtil.ETH_MAINNET, ConstantUtil.ETH, ConstantUtil.ETH));
-        saveChain(context, new Chain(ConstantUtil.PUR_CHAIN_ID, ConstantUtil.PUR_CHAIN_NAME, ConstantUtil.PUR_HTTP_PROVIDER,
-                ConstantUtil.PUR_TOKEN_NAME, ConstantUtil.PUR_TOKEN_SYMBOL, ConstantUtil.PUR_TOKEN_AVATAR));
     }
 
 }
