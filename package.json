@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "ganache": "^6.4.4",
-    "ganache-cli": "^6.9.1"
+    "ganache-cli": "^6.12.2"
   },
   "devDependencies": {},
   "scripts": {
